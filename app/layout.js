@@ -1,0 +1,65 @@
+import { Inter, Fraunces } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  style: ["normal", "italic"],
+  variable: "--font-display",
+});
+
+const SITE_URL = "https://www.lumeraleisurecarts.com";
+const DESCRIPTION =
+  "Lumera Leisure Carts is coming soon — premium custom golf carts and low-speed vehicles built for the coast, the club and the neighborhood.";
+
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: "Lumera Leisure Carts — Coming Soon",
+  description: DESCRIPTION,
+  keywords: [
+    "Lumera Leisure Carts",
+    "golf carts",
+    "custom golf carts",
+    "low speed vehicles",
+    "LSV",
+    "street legal golf carts",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "Lumera Leisure Carts",
+    title: "Lumera Leisure Carts — Coming Soon",
+    description: DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lumera Leisure Carts — Coming Soon",
+    description: DESCRIPTION,
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    apple: "/favicon.svg",
+  },
+  robots: { index: true, follow: true },
+};
+
+export const viewport = {
+  themeColor: "#faf6f0",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
+}
