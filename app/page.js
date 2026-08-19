@@ -59,6 +59,12 @@ export default function Home() {
 
         <p className="lede">{site.lede}</p>
 
+        <ul className="specs">
+          {site.specs.map((spec) => (
+            <li key={spec}>{spec}</li>
+          ))}
+        </ul>
+
         <WaitlistForm />
 
         <div className="contact">

@@ -16,7 +16,7 @@ const fraunces = Fraunces({
 
 const SITE_URL = "https://www.lumeraleisurecarts.com";
 const DESCRIPTION =
-  "Lumera Leisure Carts is coming soon — premium custom golf carts and low-speed vehicles built for the coast, the club and the neighborhood.";
+  "Lumera Leisure Carts is coming soon — premium six-passenger golf carts and street-legal LSVs, fully loaded and ready to ride. No custom build queue, no waiting.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -25,10 +25,11 @@ export const metadata = {
   keywords: [
     "Lumera Leisure Carts",
     "golf carts",
-    "custom golf carts",
+    "6 passenger golf cart",
     "low speed vehicles",
     "LSV",
     "street legal golf carts",
+    "golf carts for sale",
   ],
   alternates: { canonical: "/" },
   openGraph: {

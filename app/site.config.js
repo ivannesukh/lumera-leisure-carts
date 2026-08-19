@@ -11,8 +11,11 @@ export const site = {
   phone: "",
 
   tagline: "Coming Soon",
-  headlineTop: "Ride the coast",
-  headlineAccent: "in something better.",
+  headlineTop: "Fully loaded,",
+  headlineAccent: "ready to ride.",
   lede:
-    "Lumera Leisure Carts is building premium custom golf carts and street-legal LSVs for the coast, the club and the neighborhood. We're putting the finishing touches on the showroom — join the list and you'll be first through the door.",
+    "Premium six-passenger carts, factory-built by the brands you already trust and loaded with the options that matter. No custom build queue, no months of waiting — drive it home the day you take delivery. Showroom opening soon.",
+
+  // Short proof points shown under the paragraph. Keep them to 2–3 words each.
+  specs: ["Six-passenger", "Fully loaded", "Premium brands", "Ready to ride"],
 };
