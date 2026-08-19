@@ -4,6 +4,8 @@ A one-page "coming soon" site for **Lumera Leisure Carts** (www.lumeraleisurecar
 
 Built with Next.js 14 (App Router) and exported as a static site, deployed on Netlify.
 
+**Live preview:** https://lumera-leisure-carts.netlify.app
+
 ## Editing the content
 
 Almost everything you'll want to change lives in one file: **`app/site.config.js`**
