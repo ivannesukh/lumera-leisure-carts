@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify form definitions</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <!--
+      Netlify parses this file at deploy time to register the forms below.
+      The live page submits to it with fetch(). Do not delete.
+    -->
+    <form name="waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="waitlist" />
+      <input type="email" name="email" />
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>
