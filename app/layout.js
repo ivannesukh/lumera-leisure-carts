@@ -14,7 +14,7 @@ const fraunces = Fraunces({
   variable: "--font-display",
 });
 
-const SITE_URL = "https://www.lumeraleisurecarts.com";
+const SITE_URL = "https://lumeraleisurecarts.com";
 const DESCRIPTION =
   "Lumera Leisure Carts is coming soon — premium six-passenger golf carts and street-legal LSVs, fully loaded and ready to ride. No custom build queue, no waiting.";
 

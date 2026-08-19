@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------
 export const site = {
   name: "Lumera Leisure Carts",
-  domain: "www.lumeraleisurecarts.com",
+  domain: "lumeraleisurecarts.com",
   email: "info@lumeraleisurecarts.com",
 
   // TODO: add your phone number, e.g. "(843) 555-0142".
