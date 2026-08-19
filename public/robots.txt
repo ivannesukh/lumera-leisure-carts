@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lumeraleisurecarts.com/sitemap.xml
+Sitemap: https://lumeraleisurecarts.com/sitemap.xml
