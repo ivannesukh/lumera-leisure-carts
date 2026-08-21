@@ -83,6 +83,16 @@ export default function Home() {
         <a className="brand" href="#top" aria-label={site.name}>
           <img src="/lumera-logo.webp" width="900" height="886" alt={site.name} />
         </a>
+
+        <p className="wordmark" aria-hidden="true">
+          <span className="wordmark-script">Lumera</span>
+          <span className="wordmark-sub">
+            <i aria-hidden="true" />
+            Leisure Carts
+            <i aria-hidden="true" />
+          </span>
+        </p>
+
         <nav className="header-actions">
           <a className="link link--phone" href={telHref}>
             <Icon name="phone" />

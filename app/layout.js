@@ -1,4 +1,4 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Yellowtail } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,6 +11,14 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",
+});
+
+// Brush script closest to the wordmark inside the badge.
+const yellowtail = Yellowtail({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+  variable: "--font-script",
 });
 
 const SITE_URL = "https://lumeraleisurecarts.com";
@@ -61,7 +69,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="en" className={`${inter.variable} ${montserrat.variable} ${yellowtail.variable}`}>
       <body>{children}</body>
     </html>
   );
