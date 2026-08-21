@@ -157,7 +157,7 @@ export default function Home() {
               {site.models.map((m) => (
                 <article className="model" key={m.slug}>
                   <div className="model-photo">
-                    <img src={m.image} width="900" height="860" alt={`${m.name} golf cart`} loading="lazy" />
+                    <img src={m.image} width="506" height="480" alt={`${m.name} golf cart`} loading="lazy" />
                   </div>
                   <div className="model-body">
                     <p className="model-tagline">{m.tagline}</p>
