@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 const SITE_URL = "https://lumeraleisurecarts.com";
 const DESCRIPTION =
-  "Six-passenger golf carts built to our own spec, loaded as standard and ready to ride. Serving the Sarasota and Orlando areas with delivery anywhere in Florida. Request a quote or your own color combination.";
+  "Six-passenger golf carts built to our own spec, loaded as standard and ready to ride. Two models, your color combination. Serving the Sarasota and Orlando areas with delivery anywhere in Florida.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -25,9 +25,7 @@ export const metadata = {
     "Lumera Leisure Carts",
     "golf carts",
     "6 passenger golf cart",
-    "low speed vehicles",
-    "LSV",
-    "street legal golf carts",
+    "6 seat golf cart",
     "golf carts for sale",
     "golf carts Sarasota",
     "golf carts Orlando",

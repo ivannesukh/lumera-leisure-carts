@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { site } from "./site.config";
 
 const encode = (data) =>
   Object.keys(data)
@@ -8,6 +9,7 @@ const encode = (data) =>
     .join("&");
 
 const EMPTY = {
+  model: "",
   name: "",
   email: "",
   phone: "",
@@ -85,6 +87,18 @@ export default function QuoteForm() {
           />
         </label>
       </p>
+
+      <label className="fieldset">
+        <span>Which model</span>
+        <select name="model" value={values.model} onChange={set("model")}>
+          <option value="">Not sure yet — help me choose</option>
+          {site.models.map((m) => (
+            <option key={m.slug} value={m.name}>
+              {m.name} — {m.tagline}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <div className="grid2">
         <label className="fieldset">

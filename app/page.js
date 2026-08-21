@@ -101,7 +101,6 @@ export default function Home() {
           <div className="glow glow--teal" aria-hidden="true" />
           <svg className="waves" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
             <path fill="#f7f0e2" d="M0 192c120-32 240-48 360-32s240 64 360 64 240-48 360-64 240 0 360 32v128H0Z" />
-            <path fill="#f2e9d6" opacity=".85" d="M0 240c144-40 288-24 432 8s288 56 432 24 288-56 432-40v88H0Z" />
           </svg>
 
           <div className="wrap hero-inner">
@@ -131,6 +130,59 @@ export default function Home() {
                 Call {site.phone}
               </a>
             </div>
+          </div>
+        </section>
+
+
+        {/* ---------------- fleet ---------------- */}
+        <section className="band" id="fleet">
+          <div className="wrap">
+            <h2 className="section-title">Two models this round</h2>
+            <p className="body body--center">
+              Both seat six. The difference is how they seat them, and how much
+              room they take up doing it.
+            </p>
+
+            <div className="models">
+              {site.models.map((m) => (
+                <article className="model" key={m.slug}>
+                  <div className="model-photo">
+                    <img src={m.image} width="900" height="860" alt={`${m.name} golf cart`} loading="lazy" />
+                  </div>
+                  <div className="model-body">
+                    <p className="model-tagline">{m.tagline}</p>
+                    <h3>{m.name}</h3>
+                    <p className="model-blurb">{m.blurb}</p>
+                    <dl className="model-specs">
+                      {m.specs.map(([k, v]) => (
+                        <div key={k}>
+                          <dt>{k}</dt>
+                          <dd>{v}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                    <div className="model-actions">
+                      <a className="btn" href="#quote">
+                        Request a quote
+                      </a>
+                      <a className="link" href={telHref}>
+                        <Icon name="phone" />
+                        Call instead
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <ul className="shared-specs">
+              {site.sharedSpecs.map((sp) => (
+                <li key={sp}>
+                  <Icon name="check" />
+                  {sp}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -198,6 +250,28 @@ export default function Home() {
                 </span>
                 {site.deliveryNote}
               </p>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ---------------- cta band ---------------- */}
+        <section className="cta-band">
+          <div className="wrap cta-band-inner">
+            <div>
+              <h2>Know what you want? Let&rsquo;s price it.</h2>
+              <p>
+                Tell us the model and the colors and we&rsquo;ll come back with a
+                number, usually the same day.
+              </p>
+            </div>
+            <div className="cta-band-actions">
+              <a className="btn btn--lg btn--amber" href="#quote">
+                Request a quote
+              </a>
+              <a className="btn btn--lg btn--outline" href={telHref}>
+                Call {site.phone}
+              </a>
             </div>
           </div>
         </section>
