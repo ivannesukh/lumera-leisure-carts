@@ -6,8 +6,8 @@ const telHref = "tel:+1" + site.phone.replace(/\D/g, "");
 export default function Home() {
   return (
     <main className="page">
-      <div className="glow glow--teal" aria-hidden="true" />
       <div className="glow glow--sun" aria-hidden="true" />
+      <div className="glow glow--teal" aria-hidden="true" />
 
       <svg
         className="waves"
@@ -16,34 +16,25 @@ export default function Home() {
         aria-hidden="true"
       >
         <path
-          fill="#eef3f2"
+          fill="#f4ecd9"
           d="M0 192c120-32 240-48 360-32s240 64 360 64 240-48 360-64 240 0 360 32v128H0Z"
         />
         <path
-          fill="#e3ecec"
+          fill="#eee2c6"
           d="M0 240c144-40 288-24 432 8s288 56 432 24 288-56 432-40v88H0Z"
-          opacity=".9"
+          opacity=".85"
         />
       </svg>
 
       <div className="content">
-        <svg className="mark" viewBox="0 0 96 96" role="img" aria-label={site.name}>
-          <circle cx="48" cy="48" r="46" fill="#ffffff" stroke="#e4dbcd" strokeWidth="1.5" />
-          <circle cx="48" cy="40" r="12" fill="none" stroke="#e2b26e" strokeWidth="2.5" />
-          <g stroke="#e2b26e" strokeWidth="2.5" strokeLinecap="round">
-            <path d="M48 20v-5M48 65v5M68 40h5M23 40h5M62.1 26h0M33.9 26h0" />
-            <path d="M62.1 25.9 65.6 22.4M30.4 22.4l3.5 3.5" />
-          </g>
-          <g
-            stroke="#0e7c86"
-            strokeWidth="3"
-            strokeLinecap="round"
-            fill="none"
-          >
-            <path d="M20 62c5.6 0 5.6 5 11.2 5s5.6-5 11.2-5 5.6 5 11.2 5 5.6-5 11.2-5 5.6 5 11.2 5" />
-            <path d="M20 74c5.6 0 5.6 5 11.2 5s5.6-5 11.2-5 5.6 5 11.2 5 5.6-5 11.2-5 5.6 5 11.2 5" opacity=".45" />
-          </g>
-        </svg>
+        <img
+          className="logo"
+          src="/lumera-logo.webp"
+          width="900"
+          height="886"
+          alt={site.name}
+          fetchPriority="high"
+        />
 
         <p className="eyebrow">
           <span className="dot" aria-hidden="true" />

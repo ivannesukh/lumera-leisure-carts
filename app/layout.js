@@ -1,4 +1,4 @@
-import { Inter, Fraunces } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,10 +7,9 @@ const inter = Inter({
   variable: "--font-sans",
 });
 
-const fraunces = Fraunces({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
-  style: ["normal", "italic"],
   variable: "--font-display",
 });
 
@@ -38,11 +37,13 @@ export const metadata = {
     siteName: "Lumera Leisure Carts",
     title: "Lumera Leisure Carts — Coming Soon",
     description: DESCRIPTION,
+    images: [{ url: "/lumera-logo.webp", width: 900, height: 886, alt: "Lumera Leisure Carts" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lumera Leisure Carts — Coming Soon",
     description: DESCRIPTION,
+    images: ["/lumera-logo.webp"],
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
@@ -52,14 +53,14 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#faf6f0",
+  themeColor: "#fbf4e6",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body>{children}</body>
     </html>
   );
