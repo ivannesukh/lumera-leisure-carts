@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 const SITE_URL = "https://lumeraleisurecarts.com";
 const DESCRIPTION =
-  "Lumera Leisure Carts is coming soon — premium six-passenger golf carts and street-legal LSVs, fully loaded and ready to ride. No custom build queue, no waiting.";
+  "Lumera Leisure Carts is coming soon — six-passenger carts built to our own spec, loaded as standard and ready to ride. No build queue, no waiting.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

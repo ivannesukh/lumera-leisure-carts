@@ -14,8 +14,8 @@ export const site = {
   headlineTop: "Fully loaded,",
   headlineAccent: "ready to ride.",
   lede:
-    "Premium six-passenger carts, factory-built by the brands you already trust and loaded with the options that matter. No custom build queue, no months of waiting — drive it home the day you take delivery. Showroom opening soon.",
+    "Six-passenger carts built to our own spec and loaded as standard — no stripped-down base model, no options list to climb. Every Lumera leaves the floor ready to ride, so there is no build queue and no months of waiting. Showroom opening soon.",
 
   // Short proof points shown under the paragraph. Keep them to 2–3 words each.
-  specs: ["Six-passenger", "Fully loaded", "Premium brands", "Ready to ride"],
+  specs: ["Six-passenger", "Fully loaded", "Lumera-built", "Ready to ride"],
 };
