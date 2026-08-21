@@ -10,9 +10,14 @@
       Netlify parses this file at deploy time to register the forms below.
       The live page submits to it with fetch(). Do not delete.
     -->
-    <form name="waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="waitlist" />
+    <form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="quote" />
+      <input type="text" name="name" />
       <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="town" />
+      <input type="text" name="colors" />
+      <textarea name="message"></textarea>
       <input type="text" name="bot-field" />
     </form>
   </body>
