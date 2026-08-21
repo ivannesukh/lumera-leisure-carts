@@ -1,21 +1,46 @@
 // ---------------------------------------------------------------------------
-// Edit these values and redeploy — nothing else needs to change.
+// Everything you'll want to edit lives here. Change a value, commit, and
+// Netlify rebuilds the site automatically.
 // ---------------------------------------------------------------------------
 export const site = {
   name: "Lumera Leisure Carts",
   domain: "lumeraleisurecarts.com",
   email: "info@lumeraleisurecarts.com",
+  phone: "(321) 464-6983",
 
-  // TODO: add your phone number, e.g. "(843) 555-0142".
-  // Leave it as "" and the phone link simply won't render.
-  phone: "",
+  status: "Stock arriving soon",
 
-  tagline: "Coming Soon",
   headlineTop: "Fully loaded,",
   headlineAccent: "ready to ride.",
-  lede:
-    "Six-passenger carts built to our own spec and loaded as standard — no stripped-down base model, no options list to climb. Every Lumera leaves the floor ready to ride, so there is no build queue and no months of waiting. Showroom opening soon.",
 
-  // Short proof points shown under the paragraph. Keep them to 2–3 words each.
+  lede:
+    "Six-passenger carts built to our own spec and loaded as standard — no stripped-down base model, no options list to climb. Every Lumera leaves the floor ready to ride, so there is no build queue and no months of waiting.",
+
+  // The four proof points under the hero.
   specs: ["Six-passenger", "Fully loaded", "Lumera-built", "Ready to ride"],
+
+  // "What you get" cards.
+  pillars: [
+    {
+      title: "Six passengers",
+      body: "Room for the whole group — not four seats and an apology to whoever drew the short straw.",
+    },
+    {
+      title: "Loaded as standard",
+      body: "The options that actually matter come fitted. There is no base model here to talk you out of.",
+    },
+    {
+      title: "Built to our spec",
+      body: "Our own build, made to our standard — not a rebadged bargain cart with a sticker on it.",
+    },
+    {
+      title: "Ready to ride",
+      body: "No build queue and no waiting on a factory slot. It leaves the floor ready to drive.",
+    },
+  ],
+
+  // Service area.
+  areas: ["Sarasota area", "Orlando area"],
+  deliveryNote:
+    "We deliver anywhere in Florida for an additional charge based on distance — tell us your town in the form and we'll quote it with the cart.",
 };
